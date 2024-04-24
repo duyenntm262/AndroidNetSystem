@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- EditText -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text here"
+        android:padding="8dp" />
+
+    <!-- LinearLayout for backlight -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- TextView for backlight -->
+        <TextView
+            android:id="@+id/backlightTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Backlight"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_weight="1"/>
+
+        <!-- Spinner for backlight -->
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:entries="@array/backlight_options"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!-- LinearLayout for reading volume -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- TextView for reading volume -->
+        <TextView
+            android:id="@+id/readingVolumeTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Reading Volume"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_weight="1"/>
+
+        <!-- Spinner for reading volume -->
+        <Spinner
+            android:id="@+id/readingVolumeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:entries="@array/reading_volume_options"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!-- LinearLayout for system vibration -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- TextView for system vibration -->
+        <TextView
+            android:id="@+id/systemVibrationTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="System Vibration"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_weight="1"/>
+
+        <!-- Spinner for system vibration -->
+        <Spinner
+            android:id="@+id/systemVibrationSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:entries="@array/system_vibration_options"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <!-- LinearLayout for screen timeout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- TextView for screen timeout -->
+        <TextView
+            android:id="@+id/screenTimeoutTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Screen Timeout"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_weight="1"/>
+
+        <!-- EditText for screen timeout -->
+        <EditText
+            android:id="@+id/screenTimeoutEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"
+            android:padding="8dp"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/timeoutTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="seconds"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/systemVolumeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/systemVibrationSpinner"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/screenTimeoutEditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter timeout in minutes"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/setScreenTimeoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Screen Timeout" />
+
+
+    <Button
+        android:id="@+id/lanSettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setting LAN"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/btnOpenYoutube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open YouTube"
+        android:layout_margin="8dp" />
+
+
+</LinearLayout>

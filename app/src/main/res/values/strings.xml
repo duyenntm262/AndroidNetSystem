@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Net System</string>
+    <string-array name="backlight_options">
+        <item>Normal</item>
+        <item>Bright</item>
+        <item>Brightest</item>
+    </string-array>
+    <string-array name="reading_volume_options">
+        <item>Off</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="system_vibration_options">
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="system_volume_options">
+        <item>Off</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+</resources>
+
+
